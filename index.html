@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,9 +8,13 @@
   <title>NOZOMI | AI Creator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./icomoon/style.css">
 </head>
+
 <body>
 
   <!-- ナビゲーション -->
@@ -18,6 +23,7 @@
       <a href="#hero" class="nav-logo">NOZOMI</a>
       <ul class="nav-links" role="list">
         <li><a href="#about">About</a></li>
+        <li><a href="#concept">Concept</a></li>
         <li><a href="#works">Works</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -37,6 +43,19 @@
         <div class="hero-blob blob-1"></div>
         <div class="hero-blob blob-2"></div>
         <div class="hero-blob blob-3"></div>
+        <!-- キャラクター画像 -->
+        <span class="icon-ka-bi hero-char hero-char--1"></span>
+        <span class="icon-kasa hero-char hero-char--2"></span>
+        <span class="icon-ha-to hero-char hero-char--3"></span>
+        <span class="icon-himawari hero-char hero-char--4"></span>
+        <span class="icon-neko hero-char hero-char--5"></span>
+        <span class="icon-smile hero-char hero-char--6"></span>
+        <!-- <img src="images/ka-bi.svg" class="hero-char hero-char--1" alt=""> -->
+        <!-- <img src="images/kasa.svg" class="hero-char hero-char--2" alt="">
+        <img src="images/ha-to.svg" class="hero-char hero-char--3" alt="">
+        <img src="images/himawari.svg" class="hero-char hero-char--4" alt="">
+        <img src="images/neko.svg" class="hero-char hero-char--5" alt="">
+        <img src="images/smile.svg" class="hero-char hero-char--6" alt=""> -->
       </div>
       <div class="hero-content">
         <p class="hero-eyebrow" aria-label="タイトル">AI Creator</p>
@@ -45,6 +64,7 @@
         <div class="hero-actions">
           <a href="#works" class="btn btn-primary">Works を見る</a>
           <a href="#about" class="btn btn-ghost">About</a>
+          <a href="#concept" class="btn btn-ghost">Concept</a>
         </div>
       </div>
       <div class="hero-scroll-hint" aria-hidden="true">
@@ -84,77 +104,122 @@
         </div>
       </div>
     </section>
+    <!-- Conceptセクション -->
+    <section class="section concept-section" id="concept" aria-labelledby="concept-heading">
+      <div class="container">
+        <div class="section-label" aria-hidden="true">02</div>
+        <h2 class="section-title" id="concept-heading">Concept</h2>
 
+        <div class="concept-grid">
+          <div class="concept-text">
+            <p class="lead-text">
+              子どもの自由な発想と、AIの表現を<br />
+              ゆるやかにつないでいます。
+            </p>
+
+            <p>
+              このサイトに登場するイラストは、娘たちが描いた絵を元にしています。<br />
+              そのままの線や形の面白さを大切にしながら、
+              AIの力も少し借りて、自分なりの表現としてかたちにしています。
+            </p>
+
+            <p>
+              整いすぎたものではなく、
+              日常の中にある自由さや偶然のかわいさを残したまま、
+              クリエイティブに落とし込むことを大切にしています。
+            </p>
+          </div>
+
+          <div class="concept-side">
+            <div class="concept-gallery" aria-labelledby="concept-gallery-heading">
+              <h3 class="section-subtitle" id="concept-gallery-heading">Small Gallery</h3>
+
+              <div class="concept-gallery-grid">
+                <figure class="gallery-card">
+                  <img src="images/kids-art-1.jpg" alt="子どもが描いた原画 1" />
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/kids-art-2.jpg" alt="子どもが描いた原画 2" />
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/kids-art-3.jpg" alt="子どもが描いた原画 3" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Worksセクション -->
     <section class="section works-section" id="works" aria-labelledby="works-heading">
       <div class="container">
-        <div class="section-label" aria-hidden="true">02</div>
+        <div class="section-label" aria-hidden="true">03</div>
         <h2 class="section-title" id="works-heading">Works</h2>
         <div class="works-grid" role="list">
 
-          <article class="work-card" role="listitem" id="work-omikuji">
+          <article class="work-card" role="listitem" id="work-sebas">
             <div class="work-card-inner">
               <div class="work-visual work-visual--mint">
-                <div class="work-icon" aria-hidden="true">🎋</div>
+                <div class="work-icon" aria-hidden="true">🫖</div>
               </div>
               <div class="work-info">
-                <span class="work-category">AI × GIF</span>
-                <h3 class="work-title">AI おみくじ GIF</h3>
-                <p class="work-desc">AIが生成したおみくじをGIFアニメーションで表現したプロジェクト。運勢を可視化する実験。</p>
+                <span class="work-category">AI × Personal Assistant</span>
+                <h3 class="work-title">生活支援AI「Sebas」の設計</h3>
+                <p class="work-desc">OpenClawを基盤に、生活・学習・発信を支えるAIアシスタントを構築。安全ルールや記憶、役割分担を整えながら育てています。</p>
                 <div class="work-tags">
-                  <span class="tag tag--sm">生成AI</span>
-                  <span class="tag tag--sm">GIF</span>
+                  <span class="tag tag--sm">OpenClaw</span>
+                  <span class="tag tag--sm">AIエージェント</span>
                 </div>
               </div>
             </div>
           </article>
 
-          <article class="work-card" role="listitem" id="work-illustration">
+          <article class="work-card" role="listitem" id="work-x-draft-workflow">
             <div class="work-card-inner">
               <div class="work-visual work-visual--sage">
+                <div class="work-icon" aria-hidden="true">✍️</div>
+              </div>
+              <div class="work-info">
+                <span class="work-category">AI × Workflow</span>
+                <h3 class="work-title">X投稿下書き化ワークフロー</h3>
+                <p class="work-desc">日々の気づきから投稿文案を作り、選んだ案だけをTypefullyの下書きへ送る半自動フロー。人の確認を残し、安全性と効率を両立しました。</p>
+                <div class="work-tags">
+                  <span class="tag tag--sm">自動化</span>
+                  <span class="tag tag--sm">Typefully</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" role="listitem" id="work-portfolio-site">
+            <div class="work-card-inner">
+              <div class="work-visual work-visual--sky">
                 <div class="work-icon" aria-hidden="true">🎨</div>
               </div>
               <div class="work-info">
-                <span class="work-category">AI × Art</span>
-                <h3 class="work-title">AI イラスト生成</h3>
-                <p class="work-desc">プロンプトエンジニアリングを活用した、オリジナルAIイラスト作品集。スタイルと表現の実験。</p>
+                <span class="work-category">Web × Creative</span>
+                <h3 class="work-title">AI Creator Portfolio Site</h3>
+                <p class="work-desc">子どもの自由な絵をモチーフにした個人ポートフォリオ。素材整理や公開範囲を確認しながら、HTMLとCSSで制作しています。</p>
                 <div class="work-tags">
-                  <span class="tag tag--sm">Midjourney</span>
-                  <span class="tag tag--sm">DALL-E</span>
+                  <span class="tag tag--sm">Web制作</span>
+                  <span class="tag tag--sm">HTML / CSS</span>
                 </div>
               </div>
             </div>
           </article>
 
-          <article class="work-card" role="listitem" id="work-presentation">
+          <article class="work-card" role="listitem" id="work-progress-dashboard">
             <div class="work-card-inner">
-              <div class="work-visual work-visual--sky">
+              <div class="work-visual work-visual--peach">
                 <div class="work-icon" aria-hidden="true">📊</div>
               </div>
               <div class="work-info">
-                <span class="work-category">AI × Design</span>
-                <h3 class="work-title">AI プレゼン資料</h3>
-                <p class="work-desc">AIを使ったプレゼンテーション資料の自動生成と、デザインワークフロー最適化の実験。</p>
+                <span class="work-category">AI × Dashboard</span>
+                <h3 class="work-title">OpenClaw Progress Dashboard</h3>
+                <p class="work-desc">AIアシスタントの構築状況を見える化する進捗ページ。内部情報を分離し、公開できる内容だけをまとめています。</p>
                 <div class="work-tags">
-                  <span class="tag tag--sm">自動化</span>
-                  <span class="tag tag--sm">デザイン</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-card" role="listitem" id="work-app">
-            <div class="work-card-inner">
-              <div class="work-visual work-visual--peach">
-                <div class="work-icon" aria-hidden="true">⚡</div>
-              </div>
-              <div class="work-info">
-                <span class="work-category">AI × App</span>
-                <h3 class="work-title">小さな AI アプリ</h3>
-                <p class="work-desc">日常の小さな問題を解決するAIアプリケーション。シンプルで使いやすいツールを実験的に開発。</p>
-                <div class="work-tags">
-                  <span class="tag tag--sm">Webアプリ</span>
-                  <span class="tag tag--sm">API</span>
+                  <span class="tag tag--sm">可視化</span>
+                  <span class="tag tag--sm">Webページ</span>
                 </div>
               </div>
             </div>
@@ -167,25 +232,20 @@
     <!-- Contactセクション -->
     <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
       <div class="container">
-        <div class="section-label" aria-hidden="true">03</div>
+        <div class="section-label" aria-hidden="true">04</div>
         <h2 class="section-title" id="contact-heading">Contact</h2>
         <div class="contact-box">
           <div class="contact-icon" aria-hidden="true">✉</div>
           <p class="contact-message">
-            お問い合わせは X（Twitter）の DM からお願いします
+            お問い合わせは X のDMからお願いします
           </p>
-          <a
-            href="https://x.com/NozomiZinga"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary btn-x"
-            id="contact-x-button"
-            aria-label="X（Twitter）でDMを送る"
-          >
+          <a href="https://x.com/NozomiZinga" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-x"
+            id="contact-x-button" aria-label="XでDMを送る">
             <svg class="icon-x" role="img" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.741l7.73-8.835L1.254 2.25H8.08l4.259 5.63L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.741l7.73-8.835L1.254 2.25H8.08l4.259 5.63L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
             </svg>
-            X（Twitter）でDMを送る
+            XでDMを送る
           </a>
         </div>
       </div>
@@ -197,10 +257,11 @@
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <p class="footer-logo">NOZOMI</p>
-      <p class="footer-copy">&copy; 2025 NOZOMI. All rights reserved.</p>
+      <p class="footer-copy">&copy; 2026 NOZOMI</p>
     </div>
   </footer>
 
   <script src="js/script.js"></script>
 </body>
+
 </html>
